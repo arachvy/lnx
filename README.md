@@ -18,7 +18,7 @@ You are ready to go.
 This theme is being used at [**lnx.web.id**](https://lnx.web.id).
 
 ## Screenshot
-[![screenshot](https://raw.github.com/arachvy/lnx/screenshot.gif "lnx.web.id")](https://lnx.web.id)
+[![screenshot](https://raw.githubusercontent.com/arachvy/lnx/master/screenshot.gif "lnx.web.id")](https://lnx.web.id)
 
 ## Optional
 * Change the logo with your own image.
