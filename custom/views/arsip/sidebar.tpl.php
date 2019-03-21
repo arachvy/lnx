@@ -46,11 +46,6 @@ usort($all_people, array('PlanetFeed', 'compare'));
 
       </a>
     </span>
-    <span class="">
-      <a class="sidebar-nav-item " href="https://github.com/arachvy/lnx">
-        Fork me on Github
-      </a>
-    </span>
   </nav>
   <div class="sidebar-item">
     <p>
@@ -60,7 +55,7 @@ usort($all_people, array('PlanetFeed', 'compare'));
   </div>
   <div class="sidebar-item">
     <p>
-      <?php echo str_replace('%s', 'href="http://moonmoon.org"', _g('Powered by <a %s>moonmoon</a>'))?> <?=_g('and')?> <a href="https://codinfox.github.io" rel="nofollow noreferrer noopener" target="_blank">codinfox-lanyon</a>. <a href="./admin/"><?=_g('Administration')?></a>
+      <?php echo str_replace('%s', 'href="http://moonmoon.org"', _g('Powered by <a %s>moonmoon</a>'))?> <?=_g('and')?> <a href="https://lnx.web.id" title="Agregator Linux dan FOSS Indonesia">lnx</a>. <a href="./admin/"><?=_g('Administration')?></a>
     </p>
   </div>
 </div>
