@@ -1,11 +1,17 @@
-# lnx
+# LNX Moonmoon Theme
 A responsive theme for [moonmoon](http://moonmoon.org) feed aggregator.
+
+## Features
+* Responsive
+* Clean and minimal
+* Neat code
+* Collapsible sidebar
 
 ## Requirements
 * moonmoon stable version (v8.12) (built on v9.0.0rc3).
 
 ## Usage
-Download the ZIP file of this repo and extract the `custom` folder into your moonmoon base directory, don't worry it won't replace or override any existing files.
+Download the ZIP or tar.gz file of this repo and extract the `custom` folder into your moonmoon base directory, don't worry it won't replace or override any existing files.
 Then modify `index.php` in the root folder of your moonmoon installation) so it defaults to `home` theme at around line 40. For example:
 
 ```sh
