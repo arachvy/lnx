@@ -18,16 +18,7 @@ header('Content-type: text/html; charset=UTF-8');
 <?php include_once(dirname(__FILE__).'/sidebar.tpl.php'); ?>
 
 <div class="wrap">
-  <div class="masthead">
-    <div class="container">
-      <h3 class="masthead-title">
-        <a href="<?php echo $PlanetConfig->getUrl(); ?>" title="<?=_g('Home')?>" alt="<?php echo $PlanetConfig->getName(); ?>">
-          <img class="masthead-logo" src="/custom/img/logo.png"/>
-        </a>
-        <small><?=_g('Our awesome planet')?></small>
-      </h3>
-    </div>
-  </div>
+<?php include(__DIR__.'/top.tpl.php'); ?>
   <div class="container content">
     <div class="posts">
 <?php if (0 == count($items)) : ?>
@@ -78,23 +69,7 @@ $host = 'from-' . preg_replace('/[^a-zA-Z0-9]/i', '-', $arParsedUrl['host']);
     </div>
   </div>
 </div>
-<label for="sidebar-checkbox" class="sidebar-toggle"></label>
-<script>
-(function(document) {
-  var toggle = document.querySelector('.sidebar-toggle');
-  var sidebar = document.querySelector('#sidebar');
-  var checkbox = document.querySelector('#sidebar-checkbox');
-  document.addEventListener('click', function(e) {
-    var target = e.target;
-    if (target === toggle) {
-      checkbox.checked = !checkbox.checked;
-      e.preventDefault();
-    } else if (checkbox.checked && !sidebar.contains(target)) {
-      /* click outside the sidebar when sidebar is open */
-      checkbox.checked = false;
-    }
-  }, false);
-})(document);
-</script>
+<?php include(dirname(__FILE__).'/footer.tpl.php'); ?>
+
 </body>
 </html>

@@ -5,8 +5,8 @@ usort($all_people, array('PlanetFeed', 'compare'));
   <div class="sidebar-item">
     <div class="sidebar-personal-info">
       <div class="sidebar-personal-info-section">
-        <a href="/">
-          <img src="/custom/img/logo.svg" title="<?php echo $PlanetConfig->getName(); ?>" alt="logo" />
+        <a href="<?php echo $PlanetConfig->getUrl(); ?>">
+          <img src="https://cdn.jsdelivr.net/gh/arachvy/lnx@master/custom/img/logo.svg" title="<?php echo $PlanetConfig->getName(); ?>" alt="logo" />
         </a>
       </div>
     </div>
@@ -25,8 +25,8 @@ usort($all_people, array('PlanetFeed', 'compare'));
       </a>
     </span>
     <span class="foldable">
-      <a class="sidebar-nav-item" href="#">
-        <?php echo _g('People') . ' <span class="badge badge-light">' . count($all_people) . '</span>'?>
+      <a class="sidebar-nav-item" href="custom/people.opml" title="<?=_g('All feeds in OPML format')?>">
+        <?php echo _g('People') . '(OPML) <span class="badge badge-light">' . count($all_people) . '</span>'?>
       </a>
 <?php foreach ($all_people as $person) : ?>
       <a class="sidebar-nav-item sidebar-nav-item-sub " href="<?php echo $person->getWebsite(); ?>" title="<?=_g('Website')?>">
@@ -34,11 +34,6 @@ usort($all_people, array('PlanetFeed', 'compare'));
 
       </a>
 <?php endforeach; ?>
-    </span>
-    <span class="">
-      <a class="sidebar-nav-item " href="custom/people.opml" title="<?=_g('All feeds in OPML format')?>">
-        OPML
-      </a>
     </span>
     <span class="">
       <a class="sidebar-nav-item " href="atom.php" title="<?=_g('Syndicate')?>">
